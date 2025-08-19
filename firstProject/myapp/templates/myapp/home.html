@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HOME</title>
+    <link rel="stylesheet" href="{% static 'myapp/styles/style.css' %}"></head>
+<body>
+    <div class="centered-content">
+        <img src="{% static 'myapp/images/logo.png' %}" alt="Logo">
+        <form action="{% url 'contact' %}" method="get">
+            <button class="btn" type="submit">click to enter a form</button>
+        </form>
+    </div>
+</body>
+</html>
