@@ -22,9 +22,9 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', include('firstApp.urls')),
     #path('', include('myapp.urls'))
-    path('', include('authentification.urls')),
-    path('accounts/login/', views.login_view, name="login"),
-    path('accounts/logout/', views.logout_view, name="logout"),
-    path('accounts/register/', views.register_view, name="register"),
-
+    #path('', include('authentification.urls')),
+    #path('accounts/login/', views.login_view, name="login"),
+    #path('accounts/logout/', views.logout_view, name="logout"),
+    #path('accounts/register/', views.register_view, name="register"),
+    path('', include('Project.urls')),
 ]

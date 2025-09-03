@@ -41,6 +41,9 @@ INSTALLED_APPS = [
     'firstApp.apps.FirstappConfig',
     'myapp',
     'authentification',
+    'Project',
+    'crispy_forms',
+    'crispy_bootstrap5',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +136,5 @@ LOGIN_REDIRECT_URL = 'home'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
